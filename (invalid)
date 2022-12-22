@@ -1,0 +1,17 @@
+//1.Find the GCD of two numbers 
+#include<stdio.h>
+int main()
+{
+    int n1_328, n2_328, i, gcd;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &n1_328, &n2_328);
+
+    for(i=1; i <= n1_328 && i <= n2_328; i++)
+    {
+        if(n1_328%i==0 && n2_328%i==0)
+        gcd = i;
+    }
+    printf("G.C.D of %d and %d is %d", n1_328, n2_328, gcd);
+    return 0;
+}
